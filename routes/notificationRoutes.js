@@ -1,6 +1,6 @@
 // backend/routes/notificationRoutes.js
 import express from "express";
-import db from "../db/connection.js";
+import { db } from "../db/connection.js";
 import { authenticate, requireStudent } from "../middleware/authMiddleware.js";
 import { asyncHandler } from "../middleware/errorHandler.js";
 

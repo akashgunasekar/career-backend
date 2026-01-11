@@ -1,6 +1,6 @@
 // backend/routes/studentRoutes.js
 import express from "express";
-import db from "../db/connection.js";
+import { db } from "../db/connection.js";
 import generateOTP from "../utils/generateOTP.js";
 import sendOTP from "../utils/sendOTP.js";
 import { signToken } from "../utils/jwt.js";
