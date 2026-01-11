@@ -24,13 +24,18 @@ dotenv.config();
 
 const app = express();
 
+const cors = require("cors");
+
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "*",
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    credentials: true,
   })
 );
+
+// IMPORTANT: preflight support
+app.options("*", cors());
+
 
 app.use(express.json());
 
