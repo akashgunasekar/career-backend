@@ -34,8 +34,6 @@ app.use(
   })
 );
 
-// ❌ REMOVE THIS LINE COMPLETELY
-// app.options("*", cors());
 
 // DB check
 db.getConnection()
